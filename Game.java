@@ -2,7 +2,7 @@ package com.Bridgelabz;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 public class Game {
-
+// THIS IS DUAL PLAYER 
 
 	public static void main(String[] args)
 	{
