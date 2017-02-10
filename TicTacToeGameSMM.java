@@ -1,13 +1,11 @@
 package com.Bridgelabz;
-
 import java.util.InputMismatchException;
 import java.util.Random;
 import java.util.Scanner;
-
 public class TicTacToeGameSMM
 {
-
-	private static void singlePlayer()
+	//Single player method
+     private static void singlePlayer()
 	{
 		char a[][]=new char[3][3];
 		int r=0,c=0;
@@ -24,11 +22,9 @@ public class TicTacToeGameSMM
 			a[0][0] = '.';
 			a[0][1] = '.';
 			a[0][2] = '.';
-
 			a[1][0] = '.';
 			a[1][1] = '.';
 			a[1][2] = '.';
-			
 			a[2][0] = '.';
 			a[2][1] = '.';
 			a[2][2] = '.';
@@ -36,12 +32,9 @@ public class TicTacToeGameSMM
 			pos[0][0] = '1';
 			pos[0][1] = '2';
 			pos[0][2] = '3';
-			
-
 			pos[1][0] = '4';
 			pos[1][1] = '5';
 			pos[1][2] = '6';
-			
 			pos[2][0] = '7';
 			pos[2][1] = '8';
 			pos[2][2] = '9';
@@ -52,8 +45,7 @@ public class TicTacToeGameSMM
 				if (l % 2 == 0)
 
 				{
-				//	System.out.println("         player 2 turn  ");
-				//	System.out.println("     this is your    symbol - X");
+				//system is playing no need to print any thing
 				}
 
 				else {
@@ -71,7 +63,7 @@ public class TicTacToeGameSMM
 					}
 					System.out.println();
 				}	
-					
+
 				}
 				System.out.println();
 				try{
@@ -95,8 +87,7 @@ public class TicTacToeGameSMM
 					System.exit(0);
 				}
 			
-
-				if (p == 1 || p == 2 || p == 3) {
+                                 if (p == 1 || p == 2 || p == 3) {
 					r = 0;
 
 					c = p - 1;
@@ -125,7 +116,7 @@ public class TicTacToeGameSMM
 				}
 				
 
-			if(l%2==0)
+			if(l%2==                                        0)
 				
 				{
 
@@ -137,7 +128,7 @@ public class TicTacToeGameSMM
 						if((a[r][0]=='X'&&a[r][1]=='X'&&a[r][2]=='X')||(a[0][c]=='X'&&a[1][c]=='X'&&a[2][c]=='X')||
 								(a[0][0]=='X'&&a[1][1]=='X'&&a[2][2]=='X')||(a[0][2]=='X'&&a[2][0]=='X'&&a[1][1]=='X'))
 						{
-							System.out.println(" sorry  ");
+				                                        			System.out.println(" sorry  ");
 							System.out.println("you lost");
 							break;
 						}
@@ -223,12 +214,7 @@ TicTacToeGameSMM.dualPlayer();
 
 
 	}
-
-
-
-
-
-	
+//Dual player method
 
 	public static void dualPlayer()
 	{
