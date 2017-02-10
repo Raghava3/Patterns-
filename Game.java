@@ -1,4 +1,5 @@
 package com.Bridgelabz;
+import java.util.InputMismatchException;
 import java.util.Scanner;
 public class Game {
 
@@ -65,9 +66,15 @@ public class Game {
 					System.out.println();
 				}
 				System.out.println();
+				try{
 				System.out.println("           enter the number where u will add your are symbol ");
 				p = scn.nextInt();
-
+				}
+				catch(InputMismatchException e)
+				{
+					System.out.println("wrong location");
+					System.exit(0);
+				}
 			
 
 				if (p == 1 || p == 2 || p == 3) {
@@ -108,7 +115,7 @@ public class Game {
 
 						a[r][c]='X';
 
-						if((a[r][0]=='x'&&a[r][1]=='x'&&a[r][2]=='x')||(a[0][c]=='x'&&a[1][c]=='x'&&a[2][c]=='x')||(a[0][0]=='x'&&a[1][1]=='x'&&a[2][2]=='x'))
+						if((a[r][0]=='x'&&a[r][1]=='x'&&a[r][2]=='x')||(a[0][c]=='x'&&a[1][c]=='x'&&a[2][c]=='x')||(a[0][0]=='x'&&a[1][1]=='x'&&a[2][2]=='x')||(a[0][2]=='X'&&a[2][0]=='X'&&a[1][1]=='X'))
 						{
 							System.out.println(" congrats ");
 							System.out.println("player 2 win");
@@ -133,7 +140,7 @@ public class Game {
 					{
 
 						a[r][c]='@';
-						if((a[r][0]=='@'&&a[r][1]=='@'&&a[r][2]=='@')||(a[0][c]=='@'&&a[1][c]=='@'&&a[2][c]=='@')||(a[0][0]=='@'&&a[1][1]=='@'&&a[2][2]=='@'))
+						if((a[r][0]=='@'&&a[r][1]=='@'&&a[r][2]=='@')||(a[0][c]=='@'&&a[1][c]=='@'&&a[2][c]=='@')||(a[0][0]=='@'&&a[1][1]=='@'&&a[2][2]=='@')||(a[0][2]=='@'&&a[2][0]=='@'&&a[1][1]=='@'))
 						{
 							System.out.println("congrats ");
 							System.out.println("player 1 win");
