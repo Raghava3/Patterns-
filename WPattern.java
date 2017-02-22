@@ -9,7 +9,7 @@ public class WPattern {
 	
 		for (int j = 0; j <=5; j++) 
 		{
-       if(j==0||j==4||(i==j&&j>2)||((i+j)==4&&j<3))
+       if((i==j)||((i+j)==4))
 			{
             System.out.print("* ");	
 			}
